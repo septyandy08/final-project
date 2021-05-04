@@ -2,9 +2,12 @@
   "name": "final-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".src/server.js",
   "scripts": {
-    "test": "nodemon ./src/server.js"
+    "start": "node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "",
